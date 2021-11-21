@@ -1,0 +1,11 @@
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+variable "region" {
+  default = "ap-northeast-1"
+}
+
+variable "host" {
+  default = "capytan-rails-server"
+}
