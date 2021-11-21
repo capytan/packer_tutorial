@@ -19,3 +19,10 @@ source "amazon-ebs" "capytan-rails-server" {
     Base_AMI_NAME = "{{ .SourceAMIName }}"
   }
 }
+
+source "vagrant" "example" {
+  communicator = "ssh"
+  source_path  = "bento/amazonlinux-2"
+  provider     = "virtualbox"
+  add_force    = true
+}
